@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoBBleYou — Construye un negocio desde eso que te hace ser tú</title>
+  <meta name="description" content="DoBBleYou integra estrategia, investigación, web, CRM, automatizaciones y agentes de inteligencia artificial para profesionales independientes y dueños de negocio.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+  <!-- ==================== A. CABECERA FLOTANTE TIPO VIRTTUX ==================== -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="#inicio" class="brand-logo-wrap" aria-label="DoBBleYou Inicio">
+        <img src="assets/dobbleyou-logo-light-opt.png" alt="DoBBleYou — Be + Build" class="brand-logo-img">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#que-hacemos" class="nav-link">Qué hacemos</a></li>
+        <li><a href="#como-funciona" class="nav-link">Cómo funciona</a></li>
+        <li><a href="#ecosistema-apps" class="nav-link">Soluciones</a></li>
+        <li><a href="#recorrido-guiado" class="nav-link">Tu Solución</a></li>
+        <li><a href="#sobre-fer" class="nav-link">Sobre Fer</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#recorrido-guiado" class="btn btn-primary btn-sm">Diseña tu estructura</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="header-spacer"></div>
+
+  <main>
+    <!-- ==================== B. PORTADA (HERO) CON TRAMA TECNOLÓGICA & YOU ==================== -->
+    <section class="hero-section" id="inicio">
+      <!-- Living Tech Network Canvas (Trama de partículas interactivas) -->
+      <canvas id="heroTechCanvas" class="tech-network-canvas"></canvas>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal-on-scroll is-visible">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Estructura digital para tu propuesta
+          </div>
+          <h1 class="hero-title">
+            Construye un negocio desde eso que te hace <span class="highlight-cyan">ser tú.</span>
+          </h1>
+          <p class="hero-lead">
+            Conectamos tu propuesta con la estructura que necesita para ponerse en movimiento: web, CRM, automatizaciones y <strong>dobles digitales de ti que multiplican tu capacidad de actuar</strong>.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#recorrido-guiado" class="btn btn-primary">Diseñar mi solución en 4 pasos</a>
+            <a href="#como-funciona" class="btn btn-secondary">Explorar cómo funciona</a>
+          </div>
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <span>Centrado en tu experiencia</span>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <span>Tú mantienes la dirección</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== YOU Y SUS CINCO DOBLES DIGITALES (ESCENARIO ABIERTO) ==================== -->
+        <div class="hero-you-stage reveal-on-scroll is-visible delay-1" id="heroYouStage">
+          <!-- Red SVG: Conexiones de doble flecha opuesta (Encargo y Entrega) y Base Compartida Transversal del CRM -->
+          <svg class="you-svg-network" viewBox="0 0 600 520">
+            <defs>
+              <!-- Flecha saliente: YOU -> Doble (Encargo) -->
+              <marker id="arrowhead-out" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <polygon points="0 1, 5 3, 0 5" fill="#5CE1E6" />
+              </marker>
+              <!-- Flecha entrante: Doble -> YOU (Entrega de resultado) -->
+              <marker id="arrowhead-in" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <polygon points="0 1, 5 3, 0 5" fill="#5CE1E6" />
+              </marker>
+              <marker id="arrowhead-dim" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <polygon points="0 1, 5 3, 0 5" fill="#94A3B8" />
+              </marker>
+            </defs>
+
+            <!-- CRM: Base compartida transversal discreta que reúne la información de las 5 áreas -->
+            <ellipse cx="300" cy="270" rx="220" ry="175" class="crm-shared-base" />
+            <text x="300" y="475" class="crm-badge-label">BASE TRANSVERSAL · CRM INTEGRADOR</text>
+
+            <!-- 5 Pares de Líneas Finas Separadas con Flechas en Sentidos Opuestos -->
+            <!-- 1. Investigación (Top) -->
+            <!-- YOU -> Investigación (Encargo) -->
+            <line x1="305.0" y1="208.0" x2="305.0" y2="120.0" class="you-flow-arrow flow-forward" id="arrow-out-investigacion" marker-end="url(#arrowhead-dim)" />
+            <!-- Investigación -> YOU (Entrega) -->
+            <line x1="295.0" y1="120.0" x2="295.0" y2="208.0" class="you-flow-arrow flow-backward" id="arrow-in-investigacion" marker-end="url(#arrowhead-dim)" />
+
+            <!-- 2. Atención al Cliente (Top Right) -->
+            <!-- YOU -> Atención (Encargo) -->
+            <line x1="348.2" y1="239.7" x2="458.4" y2="180.3" class="you-flow-arrow flow-forward" id="arrow-out-atencion" marker-end="url(#arrowhead-dim)" />
+            <!-- Atención -> YOU (Entrega) -->
+            <line x1="453.6" y1="171.5" x2="343.4" y2="230.9" class="you-flow-arrow flow-backward" id="arrow-in-atencion" marker-end="url(#arrowhead-dim)" />
+
+            <!-- 3. Marketing (Bottom Right) -->
+            <!-- YOU -> Marketing (Encargo) -->
+            <line x1="335.3" y1="298.5" x2="413.4" y2="368.6" class="you-flow-arrow flow-forward" id="arrow-out-marketing" marker-end="url(#arrowhead-dim)" />
+            <!-- Marketing -> YOU (Entrega) -->
+            <line x1="420.1" y1="361.2" x2="342.0" y2="291.1" class="you-flow-arrow flow-backward" id="arrow-in-marketing" marker-end="url(#arrowhead-dim)" />
+
+            <!-- 4. Ventas (Bottom Left) -->
+            <!-- YOU -> Ventas (Encargo) -->
+            <line x1="258.0" y1="291.1" x2="179.9" y2="361.2" class="you-flow-arrow flow-forward" id="arrow-out-ventas" marker-end="url(#arrowhead-dim)" />
+            <!-- Ventas -> YOU (Entrega) -->
+            <line x1="186.6" y1="368.6" x2="264.7" y2="298.5" class="you-flow-arrow flow-backward" id="arrow-in-ventas" marker-end="url(#arrowhead-dim)" />
+
+            <!-- 5. Administración (Top Left) -->
+            <!-- YOU -> Administración (Encargo) -->
+            <line x1="256.6" y1="230.9" x2="146.4" y2="171.5" class="you-flow-arrow flow-forward" id="arrow-out-admin" marker-end="url(#arrowhead-dim)" />
+            <!-- Administración -> YOU (Entrega) -->
+            <line x1="141.6" y1="180.3" x2="251.8" y2="239.7" class="you-flow-arrow flow-backward" id="arrow-in-admin" marker-end="url(#arrowhead-dim)" />
+          </svg>
+
+          <!-- YOU Central: Con Carita Ü grande y animación facial suave (parpadeos y sonrisa) -->
+          <div class="you-central-figure" id="youCentralFigure" title="YOU: El núcleo de tu negocio">
+            <div class="you-central-glow"></div>
+            
+            <svg class="you-central-svg" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Ojos (Animación de parpadeo suave) -->
+              <circle cx="423.5" cy="175.5" r="46" class="you-eye" id="youEyeLeft" />
+              <circle cx="616" cy="175.5" r="46" class="you-eye" id="youEyeRight" />
+              <!-- Sonrisa Ü -->
+              <path d="M 323 361 L 323 673 A 197 197 0 0 0 717 673 L 717 361" class="you-mouth" id="youMouth" />
+            </svg>
+            <span class="you-label">YOU</span>
+          </div>
+
+          <!-- LOS CINCO DOBLES DIGITALES (Estáticos tras emerger de YOU) -->
+          <!-- 1. Investigación -->
+          <div class="double-figure pos-investigacion" id="doubleInvestigacion">
+            <svg class="double-u-svg" viewBox="0 0 1024 1024" fill="none">
+              <circle cx="423.5" cy="175.5" r="46" fill="#5CE1E6" />
+              <circle cx="616" cy="175.5" r="46" fill="#5CE1E6" />
+              <path d="M 323 361 L 323 673 A 197 197 0 0 0 717 673 L 717 361" stroke="#5CE1E6" stroke-width="66" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="double-badge">Investigación</span>
+          </div>
+
+          <!-- 2. Atención al Cliente -->
+          <div class="double-figure pos-atencion" id="doubleAtencion">
+            <svg class="double-u-svg" viewBox="0 0 1024 1024" fill="none">
+              <circle cx="423.5" cy="175.5" r="46" fill="#5CE1E6" />
+              <circle cx="616" cy="175.5" r="46" fill="#5CE1E6" />
+              <path d="M 323 361 L 323 673 A 197 197 0 0 0 717 673 L 717 361" stroke="#5CE1E6" stroke-width="66" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="double-badge">Atención al cliente</span>
+          </div>
+
+          <!-- 3. Marketing -->
+          <div class="double-figure pos-marketing" id="doubleMarketing">
+            <svg class="double-u-svg" viewBox="0 0 1024 1024" fill="none">
+              <circle cx="423.5" cy="175.5" r="46" fill="#5CE1E6" />
+              <circle cx="616" cy="175.5" r="46" fill="#5CE1E6" />
+              <path d="M 323 361 L 323 673 A 197 197 0 0 0 717 673 L 717 361" stroke="#5CE1E6" stroke-width="66" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="double-badge">Marketing</span>
+          </div>
+
+          <!-- 4. Ventas -->
+          <div class="double-figure pos-ventas" id="doubleVentas">
+            <svg class="double-u-svg" viewBox="0 0 1024 1024" fill="none">
+              <circle cx="423.5" cy="175.5" r="46" fill="#5CE1E6" />
+              <circle cx="616" cy="175.5" r="46" fill="#5CE1E6" />
+              <path d="M 323 361 L 323 673 A 197 197 0 0 0 717 673 L 717 361" stroke="#5CE1E6" stroke-width="66" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="double-badge">Ventas</span>
+          </div>
+
+          <!-- 5. Administración -->
+          <div class="double-figure pos-admin" id="doubleAdmin">
+            <svg class="double-u-svg" viewBox="0 0 1024 1024" fill="none">
+              <circle cx="423.5" cy="175.5" r="46" fill="#5CE1E6" />
+              <circle cx="616" cy="175.5" r="46" fill="#5CE1E6" />
+              <path d="M 323 361 L 323 673 A 197 197 0 0 0 717 673 L 717 361" stroke="#5CE1E6" stroke-width="66" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="double-badge">Administración</span>
+          </div>
+
+          <!-- Burbuja de Actividad Dinámica (Una función a la vez con resultado breve) -->
+          <div class="activity-result-bubble" id="activityBubble">
+            <div class="bubble-icon" id="bubbleIcon"><svg width="18" height="18" fill="none" stroke="#31333B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+            <div class="bubble-content">
+              <span class="bubble-role" id="bubbleRole">Función</span>
+              <span class="bubble-text" id="bubbleText">Resultado breve</span>
+            </div>
+          </div>
+
+          <!-- Caja de Aprobación Human In The Loop (Demostración Interactiva) -->
+          <div class="activity-result-bubble approval-box" id="hitlApprovalBox">
+            <div class="bubble-icon" style="background: var(--color-cyan-light); color: var(--color-charcoal);"><svg width="18" height="18" fill="none" stroke="#31333B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></div>
+            <div class="bubble-content">
+              <span class="hitl-status-text">Human in the loop</span>
+              <div style="font-weight: 700; color: #1F2937; margin: 2px 0 6px;">Pendiente de tu aprobación</div>
+              <button class="btn-approve" id="btnApproveAction">Aprobar propuesta <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline; vertical-align:middle; margin-left:3px;"><polyline points="20 6 9 17 4 12"></polyline></svg></button>
+            </div>
+          </div>
+
+          <!-- Leyenda inferior de la composición -->
+          <div class="hero-stage-caption">
+            <em>Dobles digitales de ti que multiplican tu capacidad de actuar</em>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== B12-STYLE APP & PLATFORM SHOWCASE ==================== -->
+    <section class="showcase-section" id="ecosistema-apps">
+      <div class="container">
+        <div class="showcase-header reveal-on-scroll">
+          <div class="section-badge dark">
+            <span class="section-badge-dot"></span>
+            Ecosistema en Movimiento
+          </div>
+          <h2 class="section-title">Estructuras y aplicaciones reales</h2>
+          <p class="section-subtitle centered">
+            No creamos páginas web aisladas: construimos ecosistemas digitales articulados, desde aplicaciones de gestión y tableros operativos hasta plataformas de captación.
+          </p>
+        </div>
+      </div>
+
+      <div class="showcase-track-wrapper" id="showcaseSlider">
+        <div class="showcase-track">
+          <!-- Card 1: MindFer / MindYou App -->
+          <div class="showcase-card">
+            <div class="showcase-card-browser-bar">
+              <span class="browser-dot dot-red"></span>
+              <span class="browser-dot dot-yellow"></span>
+              <span class="browser-dot dot-green"></span>
+              <span class="browser-url-pill">app.mindfer.com / MindYou</span>
+            </div>
+            <div class="showcase-card-preview" style="background: radial-gradient(circle, #252836 0%, #17181F 100%);">
+              <span class="showcase-badge-pill badge-app">App Web Operativa</span>
+              <div style="display:flex; justify-content:center; margin-bottom: 0.5rem;"><svg width="36" height="36" fill="none" stroke="#5CE1E6" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693l-1.57-.393m15.6 0l1.4 3.5a1.5 1.5 0 01-1.393 2.057H4.193A1.5 1.5 0 012.8 18.8l1.4-3.5"/></svg></div>
+              <strong style="color: #FFFFFF; font-size: 1.1rem;">MindFer · Tablero Integral</strong>
+              <span style="font-size: 0.78rem; color: var(--color-cyan); margin-top: 0.2rem;">CRM + Agentes IA + Flujo Semanal</span>
+            </div>
+            <div class="showcase-card-info">
+              <h3 class="showcase-card-title">MindFer / MindYou</h3>
+              <p class="showcase-card-desc">
+                Aplicación web y cerebro operativo con tablero Kanban inteligente, prospección de contactos automatizada y panel de agentes de IA conectados.
+              </p>
+              <div class="showcase-card-footer">
+                <span>Ecosistema Propio</span>
+                <span>Web App Activa →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: DoBBleYou Web -->
+          <div class="showcase-card">
+            <div class="showcase-card-browser-bar">
+              <span class="browser-dot dot-red"></span>
+              <span class="browser-dot dot-yellow"></span>
+              <span class="browser-dot dot-green"></span>
+              <span class="browser-url-pill">dobbleyou.com</span>
+            </div>
+            <div class="showcase-card-preview" style="background: linear-gradient(135deg, #1f2128 0%, #292d38 100%);">
+              <span class="showcase-badge-pill badge-web">Web & Captación</span>
+              <div style="display:flex; justify-content:center; margin-bottom: 0.5rem;"><svg width="36" height="36" fill="none" stroke="#5CE1E6" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg></div>
+              <strong style="color: #FFFFFF; font-size: 1.1rem;">DoBBleYou Web</strong>
+              <span style="font-size: 0.78rem; color: var(--color-cyan); margin-top: 0.2rem;">Be + Build Platform</span>
+            </div>
+            <div class="showcase-card-info">
+              <h3 class="showcase-card-title">DoBBleYou Oficial</h3>
+              <p class="showcase-card-desc">
+                Portal de conversión y diagnóstico interactivo para profesionales independientes y dueños de negocio que necesitan estructuración digital.
+              </p>
+              <div class="showcase-card-footer">
+                <span>Plataforma Principal</span>
+                <span>En Línea →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Eres Singular -->
+          <div class="showcase-card">
+            <div class="showcase-card-browser-bar">
+              <span class="browser-dot dot-red"></span>
+              <span class="browser-dot dot-yellow"></span>
+              <span class="browser-dot dot-green"></span>
+              <span class="browser-url-pill">eressingular.com</span>
+            </div>
+            <div class="showcase-card-preview" style="background: linear-gradient(135deg, #2b2438 0%, #1c1825 100%);">
+              <span class="showcase-badge-pill badge-web">Mentoría & Marca</span>
+              <div style="display:flex; justify-content:center; margin-bottom: 0.5rem;"><svg width="36" height="36" fill="none" stroke="#5CE1E6" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-linejoin="round"/><polygon points="12 7 14.5 12 12 17 9.5 12 12 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <strong style="color: #FFFFFF; font-size: 1.1rem;">Eres Singular</strong>
+              <span style="font-size: 0.78rem; color: #E9D5FF; margin-top: 0.2rem;">Huella Personal & Propuesta</span>
+            </div>
+            <div class="showcase-card-info">
+              <h3 class="showcase-card-title">Eres Singular</h3>
+              <p class="showcase-card-desc">
+                Espacio de mentoría individual guiado por Fer para clarificar la voz, descubrir la singularidad personal y formular una propuesta de alto valor.
+              </p>
+              <div class="showcase-card-footer">
+                <span>Mentoría Fer</span>
+                <span>Fase 1 Autoconocimiento →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: NetThinking -->
+          <div class="showcase-card">
+            <div class="showcase-card-browser-bar">
+              <span class="browser-dot dot-red"></span>
+              <span class="browser-dot dot-yellow"></span>
+              <span class="browser-dot dot-green"></span>
+              <span class="browser-url-pill">netthinking.cl</span>
+            </div>
+            <div class="showcase-card-preview" style="background: linear-gradient(135deg, #1b2832 0%, #131c23 100%);">
+              <span class="showcase-badge-pill badge-web">Comunidad & Red</span>
+              <div style="display:flex; justify-content:center; margin-bottom: 0.5rem;"><svg width="36" height="36" fill="none" stroke="#5CE1E6" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><path stroke-linecap="round" stroke-linejoin="round" d="M8.5 7.5L10 15m4-7.5L14 15m-5.5-9h7"/></svg></div>
+              <strong style="color: #FFFFFF; font-size: 1.1rem;">NetThinking</strong>
+              <span style="font-size: 0.78rem; color: #6EE7B7; margin-top: 0.2rem;">Red de Conocimiento Colaborativo</span>
+            </div>
+            <div class="showcase-card-info">
+              <h3 class="showcase-card-title">NetThinking</h3>
+              <p class="showcase-card-desc">
+                Red fundada por Fer que conecta a profesionales por sus conocimientos, facilitando aprendizaje colectivo, sinergias y nuevas oportunidades.
+              </p>
+              <div class="showcase-card-footer">
+                <span>Red de Pares</span>
+                <span>Fase 3 Aprendizaje →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SQUARESPACE-STYLE 4-STEP GUIDED BUILDER ==================== -->
+    <section class="builder-section" id="recorrido-guiado">
+      <div class="container builder-container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Explorador Interactivo
+          </div>
+          <h2 class="section-title">Diseña la estructura de tu negocio</h2>
+          <p class="section-subtitle centered">
+            Descubre en 4 pasos qué herramientas y automatizaciones necesitas según tu momento, y recibe una propuesta inicial personalizada.
+          </p>
+        </div>
+
+        <!-- Progress Steps Bar -->
+        <div class="builder-progress-bar-wrap">
+          <div class="builder-progress-line" id="builderProgressLine"></div>
+          
+          <div class="builder-step-indicator active" data-step="1">
+            <div class="builder-step-circle">1</div>
+            <span class="builder-step-label">Tu Momento</span>
+          </div>
+          
+          <div class="builder-step-indicator" data-step="2">
+            <div class="builder-step-circle">2</div>
+            <span class="builder-step-label">Qué Conseguir</span>
+          </div>
+
+          <div class="builder-step-indicator" data-step="3">
+            <div class="builder-step-circle">3</div>
+            <span class="builder-step-label">Tus Herramientas</span>
+          </div>
+
+          <div class="builder-step-indicator" data-step="4">
+            <div class="builder-step-circle">4</div>
+            <span class="builder-step-label">Tu Propuesta</span>
+          </div>
+        </div>
+
+        <!-- Builder Step Box -->
+        <div class="builder-step-box">
+          <!-- STEP 1: TU MOMENTO -->
+          <div class="builder-step-panel" data-step="1">
+            <h3 class="builder-step-title">Paso 1: ¿En qué etapa está tu proyecto?</h3>
+            <p class="builder-step-subtitle">Selecciona la situación que mejor te representa para adaptar el alcance:</p>
+
+            <div class="builder-options-grid">
+              <div class="builder-option-card builder-option-radio selected" data-val="empezando" data-title="Tengo experiencia y quiero poner en marcha mi negocio propio">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>Estoy empezando</h4>
+                  <p>Tengo trayectoria y conocimientos sólidos, y quiero poner en marcha mi primera plataforma profesional para ofrecer mis servicios.</p>
+                </div>
+              </div>
+
+              <div class="builder-option-card builder-option-radio" data-val="negocio-activo" data-title="Ya tengo un negocio activo y quiero conectar y ordenar sus herramientas">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>Ya tengo un negocio activo</h4>
+                  <p>Ya cuento con clientes y operaciones, pero mis procesos están dispersos y quiero que mis herramientas trabajen conectadas.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="builder-navigation-buttons" style="justify-content: flex-end;">
+              <button class="btn btn-primary" data-builder-next="2">Siguiente: Qué quieres conseguir →</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: QUÉ QUIERES CONSEGUIR -->
+          <div class="builder-step-panel" data-step="2" style="display: none;">
+            <h3 class="builder-step-title">Paso 2: ¿Qué resultados buscas facilitar?</h3>
+            <p class="builder-step-subtitle">Elige una o más prioridades para tu operación:</p>
+
+            <div class="builder-options-grid">
+              <div class="builder-option-card builder-option-check selected" data-type="objetivo" data-title="Recibir consultas calificadas">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>Recibir consultas calificadas</h4>
+                  <p>Tener una web clara con formularios orientados a recibir solicitudes directas y profesionales.</p>
+                </div>
+              </div>
+
+              <div class="builder-option-card builder-option-check selected" data-type="objetivo" data-title="Organizar contactos en un CRM">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>Organizar contactos y clientes</h4>
+                  <p>Un CRM ordenado donde registrar conversaciones, propuestas y el historial de cada persona.</p>
+                </div>
+              </div>
+
+              <div class="builder-option-card builder-option-check" data-type="objetivo" data-title="Dar seguimiento comercial puntual">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>Dar seguimiento comercial oportuno</h4>
+                  <p>Alertas y recordatorios para retomar cotizaciones enviadas en el momento justo sin olvidos.</p>
+                </div>
+              </div>
+
+              <div class="builder-option-card builder-option-check" data-type="objetivo" data-title="Automatizar tareas repetitivas y contenidos">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>Automatizaciones y Asistentes IA</h4>
+                  <p>Delegar en agentes la investigación, borradores de correos y la preparación de presupuestos base.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="builder-navigation-buttons">
+              <button class="btn btn-secondary" data-builder-prev="1">← Volver al Paso 1</button>
+              <button class="btn btn-primary" data-builder-next="3">Siguiente: Tus herramientas actuales →</button>
+            </div>
+          </div>
+
+          <!-- STEP 3: CÓMO TRABAJAS HOY -->
+          <div class="builder-step-panel" data-step="3" style="display: none;">
+            <h3 class="builder-step-title">Paso 3: ¿Con qué herramientas cuentas hoy?</h3>
+            <p class="builder-step-subtitle">Marcaremos las plataformas que ya utilizas para integrarlas sin reinventar la rueda:</p>
+
+            <div class="builder-options-grid">
+              <div class="builder-option-card builder-option-check selected" data-type="herramienta" data-title="Google Workspace / Gmail">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>Google Workspace / Gmail</h4>
+                  <p>Para correo, almacenamiento de documentos y calendario de reuniones.</p>
+                </div>
+              </div>
+
+              <div class="builder-option-card builder-option-check selected" data-type="herramienta" data-title="WhatsApp">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>WhatsApp</h4>
+                  <p>Para comunicación directa, recepción de consultas y avisos instantáneos.</p>
+                </div>
+              </div>
+
+              <div class="builder-option-card builder-option-check" data-type="herramienta" data-title="Redes Sociales / LinkedIn">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>LinkedIn o Redes Sociales</h4>
+                  <p>Para prospección activa, contenido profesional y captación de clientes.</p>
+                </div>
+              </div>
+
+              <div class="builder-option-card builder-option-check" data-type="herramienta" data-title="Planillas Excel / Notion">
+                <div class="builder-radio-circle"></div>
+                <div class="builder-option-content">
+                  <h4>Excel, Sheets o Notion</h4>
+                  <p>Para registrar listas y datos que hoy necesitan consolidarse en un CRM.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="builder-navigation-buttons">
+              <button class="btn btn-secondary" data-builder-prev="2">← Volver al Paso 2</button>
+              <button class="btn btn-primary" data-builder-next="4">Generar mi propuesta personalizada →</button>
+            </div>
+          </div>
+
+          <!-- STEP 4: TU PUNTO DE PARTIDA Y SIMULACIÓN -->
+          <div class="builder-step-panel" data-step="4" style="display: none;">
+            <h3 class="builder-step-title">Paso 4: Tu punto de partida DoBBleYou</h3>
+            <p class="builder-step-subtitle">Así se articulan tus piezas según tus elecciones:</p>
+
+            <div class="builder-result-layout">
+              <div class="builder-summary-pane">
+                <h4 class="builder-summary-title">Resumen de tu Configuración</h4>
+                
+                <div class="summary-pill-list">
+                  <div>
+                    <strong style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-gray-600);">Momento actual:</strong>
+                    <div id="summaryMomento" style="font-weight: 700; color: var(--color-charcoal); margin-top: 2px;">Estoy empezando</div>
+                  </div>
+
+                  <div style="margin-top: 0.8rem;">
+                    <strong style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-gray-600);">Objetivos clave:</strong>
+                    <ul id="summaryObjetivos" style="padding-left: 1.2rem; margin-top: 4px; font-size: 0.9rem;">
+                      <li>Recibir consultas calificadas</li>
+                      <li>Organizar clientes en un CRM</li>
+                    </ul>
+                  </div>
+
+                  <div style="margin-top: 0.8rem;">
+                    <strong style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-gray-600);">Herramientas base a integrar:</strong>
+                    <ul id="summaryHerramientas" style="padding-left: 1.2rem; margin-top: 4px; font-size: 0.9rem;">
+                      <li>Google Workspace / Gmail</li>
+                      <li>WhatsApp</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div style="border-top: 1px dashed var(--color-gray-200); padding-top: 1rem;">
+                  <button class="btn btn-primary" id="btnFinalizarRecorrido" style="width: 100%;">Conversar con Fer sobre esta propuesta</button>
+                </div>
+              </div>
+
+              <div class="builder-simulation-pane">
+                <div class="sim-header">
+                  <div class="sim-status-badge">
+                    <span class="sim-status-dot"></span>
+                    Simulación de Solución Viva
+                  </div>
+                  <span style="font-size: 0.75rem; color: #9CA3AF;">DoBBleYou Engine</span>
+                </div>
+
+                <div class="sim-content-box" id="simOutput">
+                  <!-- Dynamically filled by JS -->
+                </div>
+
+                <div style="margin-top: 1rem; font-size: 0.78rem; color: #9CA3AF; text-align: center;">
+                  <em>Ejemplo ilustrativo:</em> Tu equipo digital y flujos se configuran específicamente según tus reglas.
+                </div>
+              </div>
+            </div>
+
+            <div class="builder-navigation-buttons" style="margin-top: 2rem;">
+              <button class="btn btn-secondary" data-builder-prev="3">← Modificar elecciones</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== C. LA IDEA QUE NOS MUEVE (BE + BUILD) ==================== -->
+    <section class="section-dark">
+      <!-- Dark tech network canvas -->
+      <canvas id="darkTechCanvas" class="tech-network-canvas"></canvas>
+
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 760px; margin: 0 auto; position: relative; z-index: 3;">
+          <div class="section-badge dark">
+            <span class="section-badge-dot"></span>
+            El Significado de DoBBleYou
+          </div>
+          <h2 class="section-title">La idea que nos mueve</h2>
+          <p class="section-subtitle centered">
+            La experiencia y el conocimiento que has acumulado durante años pueden convertirse en una propuesta de alto valor. En DoBBleYou diseñamos e integramos las herramientas digitales para llevarla al día a día con solidez.
+          </p>
+        </div>
+
+        <div class="be-build-grid">
+          <div class="be-build-card reveal-on-scroll delay-1">
+            <span class="be-build-letter">Be</span>
+            <h3 class="be-build-card-title">Reconocer quién eres</h3>
+            <p class="be-build-card-text">
+              Tu punto de partida es la persona: tu trayectoria única, tus aprendizajes, tu forma de trabajar y aquello que honestamente quieres aportar al mundo.
+            </p>
+            <div class="be-build-pill-list">
+              <span class="be-build-pill">Identidad y voz propia</span>
+              <span class="be-build-pill">Conocimiento acumulado</span>
+              <span class="be-build-pill">Propósito claro</span>
+            </div>
+          </div>
+
+          <div class="be-build-card reveal-on-scroll delay-2">
+            <span class="be-build-letter">Build</span>
+            <h3 class="be-build-card-title">Construir la estructura</h3>
+            <p class="be-build-card-text">
+              Construir la infraestructura tecnológica que permite llevar tu propuesta a la práctica: una web que conecta, procesos que organizan y dobles digitales de ti que multiplican tu capacidad de actuar.
+            </p>
+            <div class="be-build-pill-list">
+              <span class="be-build-pill">Web y CRM integrado</span>
+              <span class="be-build-pill">Automatizaciones</span>
+              <span class="be-build-pill">Agentes de soporte</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="be-build-bridge reveal-on-scroll delay-3">
+          <div class="be-build-bridge-text">
+            <strong>El juego sonoro de “Double You” (Dobles digitales de ti):</strong> Tus herramientas y agentes trabajan con tu conocimiento, instrucciones y criterios. La persona conserva siempre la dirección y las decisiones importantes.
+          </div>
+          <a href="#equipo-digital" class="btn btn-dark-outline btn-sm">Ver agentes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== D. QUÉ PODEMOS CONSTRUIR CONTIGO ==================== -->
+    <section class="section-light" id="que-hacemos">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Nuestra Entrega
+          </div>
+          <h2 class="section-title">Qué podemos construir contigo</h2>
+          <p class="section-subtitle centered">
+            Una estructura modular adaptada a tu etapa: tanto si estás poniendo en marcha una nueva propuesta como si ya tienes un negocio que necesita orden y articulación digital.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal-on-scroll delay-1">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <span class="service-num">01 / ESTRATEGIA</span>
+            <h3 class="service-title">Claridad e investigación</h3>
+            <p class="service-desc">
+              Entender tu propuesta, tu público, el entorno de mercado y las prioridades reales para definir qué construir primero sin perder tiempo ni recursos.
+            </p>
+            <ul class="service-features">
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mapa de prioridades operativas</li>
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Investigación del entorno y audiencia</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal-on-scroll delay-2">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <span class="service-num">02 / PRESENCIA</span>
+            <h3 class="service-title">Web</h3>
+            <p class="service-desc">
+              Una presencia propia que explique con claridad tu oferta y facilite recibir consultas, solicitudes de servicio o reservas según el objetivo de tu proyecto.
+            </p>
+            <ul class="service-features">
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Diseño moderno y adaptable a celular</li>
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Formularios y vías de contacto directas</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal-on-scroll delay-3">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <span class="service-num">03 / RELACIONES</span>
+            <h3 class="service-title">CRM</h3>
+            <p class="service-desc">
+              Contactos, conversaciones previas, cotizaciones emitidas y oportunidades comerciales organizadas en un solo lugar sin planillas sueltas ni olvidos.
+            </p>
+            <ul class="service-features">
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Ficha de contacto con historial</li>
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Embudo de oportunidades visible</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal-on-scroll delay-1">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+            </div>
+            <span class="service-num">04 / COMUNICACIÓN</span>
+            <h3 class="service-title">Marketing</h3>
+            <p class="service-desc">
+              Herramientas y procesos para preparar contenido, comunicar con consistencia y dar continuidad al contacto con tu comunidad y prospectos.
+            </p>
+            <ul class="service-features">
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Generación de borradores con tu estilo</li>
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Secuencias de nutrición y boletines</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal-on-scroll delay-2">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <span class="service-num">05 / INGRESOS</span>
+            <h3 class="service-title">Ventas</h3>
+            <p class="service-desc">
+              Apoyo ágil en la recepción de solicitudes, preparación de presupuestos personalizados y recordatorios sistemáticos de seguimiento comercial.
+            </p>
+            <ul class="service-features">
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Plantillas dinámicas de cotización</li>
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Alertas de seguimiento oportuno</li>
+            </ul>
+          </div>
+
+          <div class="service-card reveal-on-scroll delay-3">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            <span class="service-num">06 / OPERACIÓN</span>
+            <h3 class="service-title">Administración</h3>
+            <p class="service-desc">
+              Organización de tareas diarias, documentos, recordatorios e información operativa para gestionar el negocio con tranquilidad mental.
+            </p>
+            <ul class="service-features">
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Repositorio central de documentos</li>
+              <li><svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Recordatorios y rutinas automatizadas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services-note reveal-on-scroll delay-2">
+          <strong>Criterio DoBBleYou:</strong> Las automatizaciones y los agentes de IA se incorporan únicamente donde resultan útiles y aportan agilidad real. El alcance exacto se define a la medida de tu negocio.
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== E. ASÍ TRABAJAN LAS PIEZAS JUNTAS ==================== -->
+    <section class="pipeline-section" id="como-funciona">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <div class="section-badge dark">
+            <span class="section-badge-dot"></span>
+            Flujo Integrado
+          </div>
+          <h2 class="section-title">Así trabajan las piezas juntas</h2>
+          <p class="section-subtitle centered">
+            Un recorrido de ejemplo que muestra cómo la tecnología atiende lo mecánico y te involucra únicamente en los momentos que requieren tu criterio.
+          </p>
+        </div>
+
+        <div class="pipeline-legend reveal-on-scroll delay-1">
+          <div class="legend-item">
+            <span class="legend-badge-auto">Automatizado</span>
+            <span>Se ejecuta en segundo plano</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge-human">Tu Aprobación</span>
+            <span>Requiere tu decisión o visto bueno</span>
+          </div>
+        </div>
+
+        <div class="pipeline-flow">
+          <div class="pipeline-card is-auto reveal-on-scroll delay-1">
+            <span class="pipeline-step-badge auto">Paso 1 · Automático</span>
+            <h3 class="pipeline-title">Llegada a tu web</h3>
+            <p class="pipeline-desc">Una persona interesada visita tu web, conoce tu enfoque y envía una solicitud o consulta.</p>
+          </div>
+
+          <div class="pipeline-card is-auto reveal-on-scroll delay-2">
+            <span class="pipeline-step-badge auto">Paso 2 · Automático</span>
+            <h3 class="pipeline-title">Organización en CRM</h3>
+            <p class="pipeline-desc">Sus datos quedan clasificados automáticamente en tu panel sin pérdidas ni anotaciones manuales.</p>
+          </div>
+
+          <div class="pipeline-card is-auto reveal-on-scroll delay-3">
+            <span class="pipeline-step-badge auto">Paso 3 · Automático</span>
+            <h3 class="pipeline-title">Respuesta inmediata</h3>
+            <p class="pipeline-desc">El contacto recibe una confirmación cálida con los siguientes pasos mientras se te notifica.</p>
+          </div>
+
+          <div class="pipeline-card is-human reveal-on-scroll delay-4">
+            <span class="pipeline-step-badge human">Paso 4 · Tu Criterio</span>
+            <h3 class="pipeline-title">Revisión de propuesta</h3>
+            <p class="pipeline-desc">Se genera un borrador de cotización que tú ajustas, personalizas y apruebas antes de enviar.</p>
+          </div>
+
+          <div class="pipeline-card is-auto reveal-on-scroll delay-1">
+            <span class="pipeline-step-badge auto">Paso 5 · Automático</span>
+            <h3 class="pipeline-title">Envío y registro</h3>
+            <p class="pipeline-desc">La propuesta sale hacia el cliente y queda fechada en el historial con fecha sugerida de seguimiento.</p>
+          </div>
+
+          <div class="pipeline-card is-human reveal-on-scroll delay-2">
+            <span class="pipeline-step-badge human">Paso 6 · Tu Criterio</span>
+            <h3 class="pipeline-title">Contacto de valor</h3>
+            <p class="pipeline-desc">Recibes una alerta oportuna para retomar la conversación con la persona en el momento exacto.</p>
+          </div>
+
+          <div class="pipeline-card is-auto reveal-on-scroll delay-3">
+            <span class="pipeline-step-badge auto">Paso 7 · Automático</span>
+            <h3 class="pipeline-title">Actualización de estado</h3>
+            <p class="pipeline-desc">El estado de la negociación se actualiza en el CRM reflejando el progreso del negocio.</p>
+          </div>
+
+          <div class="pipeline-card is-human reveal-on-scroll delay-4">
+            <span class="pipeline-step-badge human">Paso 8 · Control Total</span>
+            <h3 class="pipeline-title">Revisión periódica</h3>
+            <p class="pipeline-desc">Revisas tu resumen general de oportunidades y tomas decisiones estratégicas con datos claros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== F. TU EQUIPO DIGITAL ==================== -->
+    <section class="section-light alt-bg" id="equipo-digital">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Asistentes a tu Medida
+          </div>
+          <h2 class="section-title">Tu equipo digital</h2>
+          <p class="section-subtitle centered">
+            Asistentes configurados con la información, el lenguaje y las reglas de tu negocio. No sustituyen tu presencia: potencian tu capacidad de acción.
+          </p>
+        </div>
+
+        <div class="agents-grid">
+          <div class="agent-card reveal-on-scroll delay-1">
+            <div class="agent-header">
+              <div class="agent-avatar">IM</div>
+              <div>
+                <h3 class="agent-name">Investigación</h3>
+                <span class="agent-role">Radar de Mercado</span>
+              </div>
+            </div>
+            <p class="agent-desc">
+              Explora tendencias, perfiles afines y novedades en tu industria para alimentar tus decisiones con datos actualizados.
+            </p>
+            <div class="agent-tag-bar">
+              <span class="agent-tag">Monitoreo</span>
+              <span class="agent-tag">Lectura sectorial</span>
+            </div>
+          </div>
+
+          <div class="agent-card reveal-on-scroll delay-2">
+            <div class="agent-header">
+              <div class="agent-avatar">OP</div>
+              <div>
+                <h3 class="agent-name">Oportunidades</h3>
+                <span class="agent-role">Organización CRM</span>
+              </div>
+            </div>
+            <p class="agent-desc">
+              Clasifica los contactos entrantes, evalúa compatibilidad con tus servicios y los ubica en tu embudo de trabajo.
+            </p>
+            <div class="agent-tag-bar">
+              <span class="agent-tag">Clasificación</span>
+              <span class="agent-tag">Priorización</span>
+            </div>
+          </div>
+
+          <div class="agent-card reveal-on-scroll delay-3">
+            <div class="agent-header">
+              <div class="agent-avatar">CR</div>
+              <div>
+                <h3 class="agent-name">Redacción</h3>
+                <span class="agent-role">Borradores de Contenido</span>
+              </div>
+            </div>
+            <p class="agent-desc">
+              Escribe ideas para artículos, publicaciones o mensajes respetando estrictamente tu estilo y terminología habitual.
+            </p>
+            <div class="agent-tag-bar">
+              <span class="agent-tag">Estilo propio</span>
+              <span class="agent-tag">Borradores</span>
+            </div>
+          </div>
+
+          <div class="agent-card reveal-on-scroll delay-1">
+            <div class="agent-header">
+              <div class="agent-avatar">CT</div>
+              <div>
+                <h3 class="agent-name">Cotizaciones</h3>
+                <span class="agent-role">Apoyo Comercial</span>
+              </div>
+            </div>
+            <p class="agent-desc">
+              Prepara el desglose preliminar de propuestas y presupuestos a partir de los datos que recogió la consulta.
+            </p>
+            <div class="agent-tag-bar">
+              <span class="agent-tag">Agilidad</span>
+              <span class="agent-tag">Estructura base</span>
+            </div>
+          </div>
+
+          <div class="agent-card reveal-on-scroll delay-2">
+            <div class="agent-header">
+              <div class="agent-avatar">SG</div>
+              <div>
+                <h3 class="agent-name">Seguimientos</h3>
+                <span class="agent-role">Recordatorios Activos</span>
+              </div>
+            </div>
+            <p class="agent-desc">
+              Recuerda fechas límite, acuerdos con clientes y momentos oportunos para retomar conversaciones clave sin agobio.
+            </p>
+            <div class="agent-tag-bar">
+              <span class="agent-tag">Puntualidad</span>
+              <span class="agent-tag">Continuidad</span>
+            </div>
+          </div>
+
+          <div class="agent-card reveal-on-scroll delay-3">
+            <div class="agent-header">
+              <div class="agent-avatar">IF</div>
+              <div>
+                <h3 class="agent-name">Informes</h3>
+                <span class="agent-role">Síntesis Periódica</span>
+              </div>
+            </div>
+            <p class="agent-desc">
+              Resume lo ocurrido durante la semana: consultas recibidas, propuestas en curso y tareas pendientes para empezar el lunes con claridad.
+            </p>
+            <div class="agent-tag-bar">
+              <span class="agent-tag">Resumen semanal</span>
+              <span class="agent-tag">Visión global</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="agent-disclaimer reveal-on-scroll delay-2">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <p>
+            <em>Transparencia DoBBleYou:</em> Tu equipo digital se configura a la medida de tu operación. Las frecuencias de trabajo, el grado de autonomía y los puntos de revisión humana se acuerdan individualmente para cada tarea.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== G. CÓMO TRABAJAMOS ==================== -->
+    <section class="section-light">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Metodología Clara
+          </div>
+          <h2 class="section-title">Cómo trabajamos contigo</h2>
+          <p class="section-subtitle centered">
+            Un proceso en cuatro etapas diseñado para avanzar con seguridad, sin sorpresas técnicas y respetando tus tiempos.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-step reveal-on-scroll delay-1">
+            <div class="process-num-circle">1</div>
+            <h3 class="process-title">Te escuchamos</h3>
+            <p class="process-desc">
+              Conocemos a fondo tu negocio, tu modelo actual, tu experiencia y los resultados concretos que quieres conseguir.
+            </p>
+          </div>
+
+          <div class="process-step reveal-on-scroll delay-2">
+            <div class="process-num-circle">2</div>
+            <h3 class="process-title">Diseñamos</h3>
+            <p class="process-desc">
+              Definimos prioridades reales, el recorrido de tus clientes y el alcance exacto de las herramientas que implementaremos.
+            </p>
+          </div>
+
+          <div class="process-step reveal-on-scroll delay-3">
+            <div class="process-num-circle">3</div>
+            <h3 class="process-title">Construimos</h3>
+            <p class="process-desc">
+              Configuramos la web, el CRM, las automatizaciones y los agentes. Probamos cada conexión minuciosamente.
+            </p>
+          </div>
+
+          <div class="process-step reveal-on-scroll delay-4">
+            <div class="process-num-circle">4</div>
+            <h3 class="process-title">Ponemos en marcha</h3>
+            <p class="process-desc">
+              Acompañamos el uso inicial, te capacitamos con cercanía y acordamos la continuidad o soporte que necesitas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== H. PARA QUIÉN ES ==================== -->
+    <section class="section-light alt-bg" id="para-quien">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Perfiles & Momentos
+          </div>
+          <h2 class="section-title">Para quién es DoBBleYou</h2>
+          <p class="section-subtitle centered">
+            Nos dirigimos a personas con experiencia que quieren convertir lo que saben y hacen en una actividad que genere ingresos y tenga sentido para ellas.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card reveal-on-scroll delay-1">
+            <span class="audience-tag">Puesta en Marcha</span>
+            <h3 class="audience-title">“Tengo experiencia y una idea que quiero convertir en negocio.”</h3>
+            <p class="audience-desc">
+              Consultores, especialistas, mentores o profesionales que dejan una etapa corporativa o amplían su ejercicio independiente y necesitan su primera plataforma profesional.
+            </p>
+            <ul class="audience-checklist">
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Quieres presentar tus servicios de forma creíble y profesional.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Buscas una vía clara para recibir solicitudes y concertar reuniones.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Evitas enredarte con tecnología compleja desde el día uno.</span></li>
+            </ul>
+          </div>
+
+          <div class="audience-card reveal-on-scroll delay-2">
+            <span class="audience-tag">Evolución & Orden</span>
+            <h3 class="audience-title">“Ya tengo un negocio y quiero que sus herramientas trabajen conectadas.”</h3>
+            <p class="audience-desc">
+              Dueños de pequeños negocios, firmas de servicios o empresas familiares (como corredoras de seguros o empresas de eventos) que ya operan y quieren orden y agilidad.
+            </p>
+            <ul class="audience-checklist">
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Tus consultas y cotizaciones están dispersas en chats o correos.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Pierdes tiempo en tareas administrativas que deberían ser automáticas.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Quieres un seguimiento comercial consistente que no dependa de tu memoria.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== I. SOBRE FER ==================== -->
+    <section class="about-fer-section" id="sobre-fer">
+      <div class="container about-fer-grid">
+        <div class="about-fer-visual reveal-on-scroll delay-1">
+          <div class="about-fer-card-box">
+            <div class="about-fer-avatar-wrap">
+              <img src="IMG_8841.JPG" alt="María Fernanda Cortés Espinosa" onerror="this.src='brand-icon.png'">
+            </div>
+            <h3 class="about-fer-name">María Fernanda Cortés Espinosa</h3>
+            <span class="about-fer-role">Publicista · Mentora · Tejedora de Huella Personal</span>
+            <div class="about-fer-pillars">
+              <span class="about-fer-pillar-badge">30 años de empresa</span>
+              <span class="about-fer-pillar-badge">Estrategia & IA</span>
+              <span class="about-fer-pillar-badge">Mirada Humana</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-fer-body reveal-on-scroll delay-2">
+          <div class="section-badge dark">
+            <span class="section-badge-dot"></span>
+            Quién impulsa DoBBleYou
+          </div>
+          <h2 class="section-title">Sobre Fer</h2>
+          <p>
+            María Fernanda Cortés Espinosa es publicista, mentora y Tejedora de Huella Personal. Dirigió una empresa de impresión y producción durante cerca de treinta años.
+          </p>
+          <p>
+            Actualmente combina su experiencia en comunicación y negocios con el desarrollo de herramientas digitales y automatización. Es creadora de <strong>Eres Singular</strong> y <strong>NetThinking</strong>.
+          </p>
+          <div class="about-fer-quote">
+            “Su mirada une a la persona, su propuesta y las herramientas para llevarla a la práctica.”
+          </div>
+          <p>
+            En DoBBleYou, Fer traslada esa visión integradora a la arquitectura digital de tu negocio, asegurando que cada sistema respete tu identidad y facilite tu independencia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RELACIÓN CON OTRAS MARCAS ==================== -->
+    <section class="ecosystem-section">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 650px; margin: 0 auto;">
+          <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--color-gray-600); letter-spacing: 0.08em;">El Ecosistema</span>
+          <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--color-charcoal); margin-top: 0.4rem;">Tres propuestas que se complementan</h3>
+          <p style="font-size: 0.95rem; color: var(--color-charcoal-subtle); margin-top: 0.5rem;">
+            Puedes recorrer el camino completo con Fer o ingresar directamente a la etapa donde hoy se encuentra tu negocio.
+          </p>
+        </div>
+
+        <div class="ecosystem-grid">
+          <div class="ecosystem-card reveal-on-scroll delay-1">
+            <span class="ecosystem-badge neutral">Fase 1 · Autoconocimiento</span>
+            <h4 class="ecosystem-name">Eres Singular</h4>
+            <p class="ecosystem-desc">
+              Acompaña el autoconocimiento, la huella personal y la expresión de una propuesta propia desde tu singularidad.
+            </p>
+          </div>
+
+          <div class="ecosystem-card highlight reveal-on-scroll delay-2">
+            <span class="ecosystem-badge">Fase 2 · Estructura Digital</span>
+            <h4 class="ecosystem-name">DoBBleYou</h4>
+            <p class="ecosystem-desc">
+              Construye e integra la estructura digital (web, CRM, automatizaciones y agentes) para poner el negocio en marcha y sostener su operación diaria.
+            </p>
+          </div>
+
+          <div class="ecosystem-card reveal-on-scroll delay-3">
+            <span class="ecosystem-badge neutral">Fase 3 · Red de Conocimiento</span>
+            <h4 class="ecosystem-name">NetThinking</h4>
+            <p class="ecosystem-desc">
+              Conecta a personas por sus conocimientos y facilita el aprendizaje mutuo, la colaboración y nuevas oportunidades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== J. FORMAS DE TRABAJAR ==================== -->
+    <section class="section-light">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Colaboración Transparente
+          </div>
+          <h2 class="section-title">Formas de trabajar</h2>
+          <p class="section-subtitle centered">
+            Modelos de relación claros y acordes al momento de tu proyecto, con presupuestos personalizados sin cargos ocultos.
+          </p>
+        </div>
+
+        <div class="modalities-grid">
+          <div class="modality-card reveal-on-scroll delay-1">
+            <div class="modality-header">
+              <span class="audience-tag">Proyecto a la Medida</span>
+              <h3 class="modality-title">Implementación</h3>
+              <p class="modality-subtitle">Para construir o renovar la estructura completa de tu negocio.</p>
+            </div>
+            <ul class="modality-features">
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Diagnóstico estratégico de partida y mapa de necesidades.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Diseño visual y arquitectura web completa adaptada a celulares.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Construcción, configuración de CRM y automatizaciones clave.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Pruebas rigurosas de flujo y acompañamiento en la puesta en marcha.</span></li>
+            </ul>
+            <div class="modality-footer-note">El alcance específico de herramientas e integraciones se define en cada propuesta según las prioridades acordadas.</div>
+          </div>
+
+          <div class="modality-card reveal-on-scroll delay-2">
+            <div class="modality-header">
+              <span class="audience-tag">Acompañamiento Mensual</span>
+              <h3 class="modality-title">Continuidad</h3>
+              <p class="modality-subtitle">Para que tu plataforma se mantenga actualizada, ágil y operando sin fricción.</p>
+            </div>
+            <ul class="modality-features">
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Mantenimiento y supervisión técnica activa de las herramientas.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Soporte cercano y resolución de dudas sobre el uso de la plataforma.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Ajustes progresivos y mejoras conforme tu negocio evoluciona.</span></li>
+              <li><svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span>Supervisión del consumo de IA y licenciamientos acordados.</span></li>
+            </ul>
+            <div class="modality-footer-note">Acuerdo mensual flexible adaptado a la intensidad y volumen que requiere tu operación.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== K. PREGUNTAS FRECUENTES ==================== -->
+    <section class="section-light alt-bg">
+      <div class="container">
+        <div class="reveal-on-scroll" style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Respuestas Claras
+          </div>
+          <h2 class="section-title">Preguntas frecuentes</h2>
+          <p class="section-subtitle centered">
+            Resolvemos las dudas habituales antes de iniciar una conversación.
+          </p>
+        </div>
+
+        <div class="faq-grid reveal-on-scroll delay-1">
+          <div class="faq-item">
+            <button class="faq-question"><span>¿Necesito tener mi propuesta definida?</span><svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="faq-answer">No necesariamente terminada. Si ya tienes clara tu experiencia y el servicio que deseas prestar, en la primera etapa de escucha y diagnóstico ayudamos a estructurarla. Si requieres un trabajo más profundo de autoconocimiento y marca personal, puedes comenzar previamente con Fer a través de <strong>Eres Singular</strong>.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"><span>¿Tengo que saber de tecnología?</span><svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="faq-answer">No. Toda la arquitectura, conexiones y configuraciones las construimos e integramos en DoBBleYou. Tu rol es aportar tu conocimiento, tus criterios de negocio y tomar las decisiones importantes. Las interfaces que usarás son amigables y te acompañamos en cada paso.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"><span>¿Podemos empezar con algo pequeño?</span><svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="faq-answer">Sí, es de hecho la mejor recomendación. Podemos construir una primera versión sólida (por ejemplo, tu web de presentación y un CRM con recepción de solicitudes organizada) y luego ir sumando automatizaciones y agentes a medida que el negocio lo demande.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"><span>¿Puedo integrar herramientas que ya uso?</span><svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="faq-answer">Por supuesto. Si ya utilizas Google Workspace, Calendly, WhatsApp, Mailchimp u otras plataformas, buscamos articularlas dentro del ecosistema para no duplicar costos ni obligarte a cambiar rutinas que ya funcionan.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"><span>¿Qué tareas pueden hacer los agentes?</span><svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="faq-answer">Los agentes se desempeñan en tareas específicas como investigar información de mercado, redactar borradores de contenido o correos, sugerir seguimientos a contactos y preparar resúmenes de oportunidades. Siempre operan bajo tus directrices y tú mantienes el visto bueno final.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"><span>¿Qué incluye la continuidad mensual?</span><svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="faq-answer">Incluye monitoreo preventivo de tus herramientas para que sigan conectadas, soporte técnico ante cualquier eventualidad, supervisión del consumo de servicios e inteligencia artificial, y espacio para pequeñas mejoras continuas.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"><span>¿Puedo trabajar también mi marca personal?</span><svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="faq-answer">Sí. A través de <strong>Eres Singular</strong>, Fer guía mentorías individuales dedicadas a identificar la huella personal, clarificar la voz y definir el posicionamiento de tu propuesta antes o en paralelo a la construcción técnica.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"><span>¿Cómo se relaciona con NetThinking?</span><svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="faq-answer"><strong>NetThinking</strong> es la red colaborativa creada por Fer para conectar profesionales a partir de sus conocimientos. Una vez que tu negocio tiene su estructura en DoBBleYou, participar en NetThinking abre puertas de colaboración, aprendizaje y visibilidad entre pares.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== L. CIERRE & FORMULARIO ==================== -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-wrap reveal-on-scroll">
+          <div class="contact-info">
+            <div class="section-badge">
+              <span class="section-badge-dot"></span>
+              Primer Paso
+            </div>
+            <h2 class="contact-info-title">Lo que sabes puede tomar una nueva forma.</h2>
+            <p class="contact-info-lead">
+              Conversemos sobre lo que quieres construir y el primer paso para ponerlo en marcha. Sin compromisos ni tecnicismos innecesarios.
+            </p>
+            
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <strong>Correo de contacto:</strong>
+                  <div>contacto@dobbleyou.com</div>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <strong>Atención:</strong>
+                  <div>Remota global · Santiago de Chile</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-demo-banner">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+              <span><strong>Versión Demostración:</strong> Este formulario ilustra la experiencia de consulta. No almacena ni transfiere datos privados.</span>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="contactDemoForm">
+              <div class="form-group">
+                <label class="form-label" for="nombre">Nombre completo</label>
+                <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Ej. Andrea Morales" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Correo electrónico</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="andrea@ejemplo.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="situacion">¿En qué momento se encuentra tu propuesta?</label>
+                <select class="form-select" id="situacion" name="situacion" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="puesta-en-marcha">Tengo experiencia y quiero poner en marcha mi negocio</option>
+                  <option value="negocio-activo">Ya tengo un negocio y quiero conectar sus herramientas</option>
+                  <option value="otra">Otra consulta particular</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="mensaje">Cuéntanos brevemente sobre tu negocio o idea (se autocompleta con tu recorrido)</label>
+                <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="¿Qué ofreces y qué te gustaría organizar o automatizar?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Conversemos sobre tu negocio</button>
+            </form>
+
+            <div class="form-success-message" id="formSuccessNotice">
+              <h4 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.5rem;">¡Solicitud demostrativa enviada!</h4>
+              <p style="font-size: 0.95rem;">En la versión conectada definitiva, este paso creará automáticamente tu contacto en el CRM y te enviará una confirmación inmediata por correo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <img src="assets/dobbleyou-logo-dark-opt.png" alt="DoBBleYou — Be + Build" class="footer-logo-img">
+          <p class="footer-brand-desc">
+            Construye un negocio desde eso que te hace ser tú. Dobles digitales de ti que multiplican tu capacidad de actuar.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#que-hacemos" class="footer-link">Qué hacemos</a></li>
+            <li><a href="#como-funciona" class="footer-link">Cómo funciona</a></li>
+            <li><a href="#ecosistema-apps" class="footer-link">Soluciones & Apps</a></li>
+            <li><a href="#recorrido-guiado" class="footer-link">Recorrido Guiado</a></li>
+            <li><a href="#para-quien" class="footer-link">Para quién es</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Ecosistema</h4>
+          <ul class="footer-links">
+            <li><a href="#sobre-fer" class="footer-link">Sobre Fer</a></li>
+            <li><a href="#sobre-fer" class="footer-link">Eres Singular</a></li>
+            <li><a href="#sobre-fer" class="footer-link">NetThinking</a></li>
+            <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contacto</h4>
+          <ul class="footer-links">
+            <li class="footer-link">contacto@dobbleyou.com</li>
+            <li class="footer-link">Santiago, Chile</li>
+            <li class="footer-link">Atención remota global</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 DoBBleYou · Creado por María Fernanda Cortés Espinosa. Todos los derechos reservados.
+        </div>
+        <div style="color: var(--color-cyan); font-family: var(--font-quicksand); font-weight: 700;">
+          Be + Build
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js?v=6"></script>
+</body>
+</html>
