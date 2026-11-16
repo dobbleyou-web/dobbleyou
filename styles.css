@@ -416,7 +416,7 @@ button, input, textarea, select {
 
 /* Hero section integration */
 .hero-section {
-  padding: 4.5rem 0 5.5rem;
+  padding: 3.25rem 0 4.5rem;
   background: #FFFFFF;
   position: relative;
   overflow: hidden;
@@ -438,15 +438,15 @@ button, input, textarea, select {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 3.5rem;
+  grid-template-columns: 1.05fr 1.2fr;
+  gap: 2.75rem;
   align-items: center;
   position: relative;
   z-index: 2;
 }
 
 .hero-content {
-  max-width: 540px;
+  max-width: 560px;
   position: relative;
   z-index: 3;
 }
@@ -457,7 +457,7 @@ button, input, textarea, select {
   line-height: 1.12;
   letter-spacing: -0.035em;
   color: var(--color-charcoal);
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.15rem;
 }
 
 .hero-title .highlight-cyan {
@@ -470,10 +470,10 @@ button, input, textarea, select {
 }
 
 .hero-lead {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.16rem;
+  line-height: 1.58;
   color: var(--color-charcoal-subtle);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-lead strong {
@@ -482,9 +482,15 @@ button, input, textarea, select {
 
 .hero-cta-group {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-cta-group .btn {
+  padding: 0.8rem 1.3rem;
+  font-size: 0.9rem;
 }
 
 .hero-trust-bar {
@@ -835,6 +841,12 @@ button, input, textarea, select {
 }
 
 @media (max-width: 640px) {
+  .hero-cta-group {
+    flex-wrap: wrap;
+  }
+  .hero-cta-group .btn {
+    width: 100%;
+  }
   .hero-you-stage {
     height: 430px;
     max-width: 100%;
