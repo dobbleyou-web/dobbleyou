@@ -1935,20 +1935,20 @@ button, input, textarea, select {
 }
 
 .about-fer-avatar-wrap {
-  width: 124px;
-  height: 124px;
+  width: 148px;
+  height: 148px;
   border-radius: 50%;
   margin: 0 auto 1.5rem;
   border: 3px solid var(--color-cyan);
   padding: 4px;
   background: rgba(92, 225, 230, 0.1);
-  box-shadow: 0 0 20px rgba(92, 225, 230, 0.3);
+  box-shadow: 0 0 24px rgba(92, 225, 230, 0.35);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .about-fer-card-box:hover .about-fer-avatar-wrap {
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(92, 225, 230, 0.5);
+  box-shadow: 0 0 32px rgba(92, 225, 230, 0.55);
 }
 
 .about-fer-avatar-wrap img {
@@ -1992,6 +1992,17 @@ button, input, textarea, select {
   color: #D1D5DB;
 }
 
+.about-fer-section .section-title {
+  color: var(--color-white);
+  font-size: 2.15rem;
+  line-height: 1.22;
+  margin-bottom: 1.4rem;
+}
+
+.about-fer-section .section-title .text-cyan {
+  color: var(--color-cyan);
+}
+
 .about-fer-body p {
   margin-bottom: 1.2rem;
 }
@@ -2003,6 +2014,20 @@ button, input, textarea, select {
   font-style: italic;
   color: var(--color-white);
   font-size: 1.12rem;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.9rem 1.2rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.about-fer-motto {
+  font-family: var(--font-quicksand);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-cyan);
+  letter-spacing: 0.015em;
+  margin-top: 1.6rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 /* Ecosystem */
