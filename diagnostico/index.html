@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnóstico de Procesos de Negocio — DoBBleYou</title>
+  <meta name="description" content="Diagnóstico interactivo para mapear cómo atiendes, vendes y organizas tu negocio, identificar oportunidades de automatización y definir un alcance concreto de trabajo con Fer.">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png?v=2">
+  <link rel="icon" href="/favicon.ico?v=2">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos base de DoBBleYou + Estilos específicos del Diagnóstico -->
+  <link rel="stylesheet" href="/styles.css?v=11">
+  <link rel="stylesheet" href="/diagnostico/diagnostico.css?v=2">
+</head>
+<body class="diag-body">
+
+  <!-- ==================== CABECERA DEL SITIO ==================== -->
+  <header class="site-header is-scrolled">
+    <div class="nav-wrap">
+      <a href="/" class="brand-logo-wrap" aria-label="DoBBleYou Inicio">
+        <img src="/assets/dobbleyou-logo-light-opt.png" alt="DoBBleYou — Be + Build" class="brand-logo-img">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="/#que-hacemos" class="nav-link">Qué hacemos</a></li>
+        <li><a href="/#como-funciona" class="nav-link">Cómo funciona</a></li>
+        <li><a href="/#ecosistema-apps" class="nav-link">Soluciones</a></li>
+        <li><a href="/#sobre-fer" class="nav-link">Sobre Fer</a></li>
+        <li><a href="/diagnostico" class="nav-link" style="color: var(--color-cyan); font-weight: 700;">Diagnóstico</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#admin" class="btn btn-secondary btn-sm" id="btnNavFerAdmin" title="Acceso privado para Fer">
+          🔒 Acceso Fer
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="header-spacer" style="height: 80px;"></div>
+
+  <!-- ==================== CONTENEDOR PRINCIPAL DEL DIAGNÓSTICO ==================== -->
+  <main class="diag-wrapper">
+    <div class="diag-container" id="diagAppRoot">
+
+      <!-- Notificación de guardado automático en navegador -->
+      <div class="diag-autosave-bar">
+        <div class="diag-autosave-left">
+          <span class="diag-autosave-dot" id="diagAutosaveDot"></span>
+          <span id="diagAutosaveText">Guardado en este navegador</span>
+        </div>
+        <div class="diag-autosave-actions">
+          <span style="font-size: 0.78rem; color: var(--diag-text-light);">Tus respuestas se conservan automáticamente</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta de Progreso Dinámica -->
+      <div class="diag-progress-card" id="diagProgressCard" style="display: none;">
+        <div class="diag-progress-header">
+          <div class="diag-stage-title-wrap">
+            <span class="diag-stage-number" id="diagStageNum">Paso 1</span>
+            <span class="diag-stage-current-name" id="diagStageName">Cargando...</span>
+          </div>
+          <div class="diag-progress-pct" id="diagProgressPct">0%</div>
+        </div>
+        <div class="diag-progress-track">
+          <div class="diag-progress-fill" id="diagProgressFill" style="width: 0%;"></div>
+        </div>
+        <div class="diag-steps-indicator" id="diagPillsWrap"></div>
+      </div>
+
+      <!-- Tarjeta de Contenido de Preguntas -->
+      <div class="diag-card" id="diagStageCard">
+        <div style="text-align: center; padding: 2rem;">
+          <p>Cargando diagnóstico...</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== PIE DE PÁGINA ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <img src="/assets/dobbleyou-logo-dark-opt.png" alt="DoBBleYou — Be + Build" class="footer-logo-img">
+          <p class="footer-brand-desc">
+            Construye un negocio desde eso que te hace ser tú. Dobles digitales de ti que multiplican tu capacidad de actuar.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Diagnóstico</h4>
+          <ul class="footer-links">
+            <li><a href="/diagnostico" class="footer-link">Iniciar diagnóstico</a></li>
+            <li><a href="#admin" class="footer-link">Vista privada para Fer</a></li>
+            <li><a href="/" class="footer-link">Volver al inicio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Ecosistema</h4>
+          <ul class="footer-links">
+            <li><a href="/#sobre-fer" class="footer-link">Sobre Fer</a></li>
+            <li><a href="https://eressingular.com" target="_blank" rel="noopener" class="footer-link">Eres Singular</a></li>
+            <li><a href="https://netthinking.cl" target="_blank" rel="noopener" class="footer-link">NetThinking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contacto</h4>
+          <ul class="footer-links">
+            <li class="footer-link">contacto@dobbleyou.com</li>
+            <li class="footer-link">Santiago, Chile</li>
+            <li class="footer-link">Atención remota global</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 DoBBleYou · Creado por María Fernanda Cortés Espinosa. Todos los derechos reservados.
+        </div>
+        <div style="color: var(--color-cyan); font-family: var(--font-quicksand); font-weight: 700;">
+          Be + Build
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase SDKs Oficiales v10 Compat para Firestore y Auth -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  
+  <!-- Lógica y Motor del Diagnóstico -->
+  <script src="/diagnostico/diagnostico.js?v=2"></script>
+</body>
+</html>
